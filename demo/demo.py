@@ -164,7 +164,7 @@ class Asteroid(pygame.sprite.Sprite):
 
         if self.rect.width > 5:
 
-            for i in range(self.rect.width / 2):
+            for i in range(int(self.rect.width / 2)):
                 new_asteroid = self.new_smaller_asteroid()
                 asteroid_list.add(new_asteroid)
 
